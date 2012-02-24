@@ -1,5 +1,5 @@
-markdownpapers-wrapper
-======================
+Paperwrap
+=========
 
 A JRuby wrapper around the [MarkdownPapers](https://github.com/lruiz/MarkdownPapers) Java library.
 
