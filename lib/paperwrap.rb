@@ -1,3 +1,4 @@
+require 'java'
 require 'paperwrap/markdown'
 
 module Paperwrap

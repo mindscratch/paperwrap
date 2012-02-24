@@ -1,5 +1,5 @@
 jars_path = File.join(File.dirname(__FILE__), '..', '..', 'ext', 'java', 'jar')
-Dir.glob("#{jars_path}/**/*.jar").each {|jar| puts "load #{jar}"; require jar}
+Dir.glob("#{jars_path}/**/*.jar").each {|jar| require jar}
 
 module Paperwrap
   class Markdown
@@ -9,7 +9,7 @@ module Paperwrap
     end
 
     def to_html
-      reader = java.io.StringReader.new text
+      reader = java.io.StringReader.new @text
       writer = java.io.StringWriter.new
       html = ''
       begin

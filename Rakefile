@@ -53,7 +53,9 @@ task :default => "spec"
 
 desc "Open an irb session preloaded with this library"
 task :console do
-  sh "irb -rubygems -r ./lib/#{name}.rb"
+  SPEC = eval(File.read(gemspec_file))
+  require_paths = SPEC.require_paths.map {|path| "-I #{path.strip}"}.join(" ")
+  sh "irb -rubygems #{require_paths} -r ./lib/#{name}.rb"
 end
 
 #############################################################################
