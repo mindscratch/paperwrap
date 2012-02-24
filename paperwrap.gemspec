@@ -53,7 +53,13 @@ Gem::Specification.new do |s|
   ## THE MANIFEST COMMENTS, they are used as delimiters by the task.
   # = MANIFEST =
   s.files = %w[
-
+    Gemfile
+    Gemfile.lock
+    README.md
+    Rakefile
+    lib/paperwrap.rb
+    lib/paperwrap/version.rb
+    paperwrap.gemspec
   ]
   # = MANIFEST =
 
