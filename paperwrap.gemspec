@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
 
   ## This gets added to the $LOAD_PATH so that 'lib/NAME.rb' can be required as
   ## require 'NAME.rb' or'/lib/NAME/file.rb' can be as require 'NAME/file.rb'
-  s.require_paths = %w[lib]
+  s.require_paths = %w[lib, ext/java/jar]
 
   ## Specify any RDoc options here. You'll want to add your README and
   ## LICENSE files to the extra_rdoc_files list.
@@ -57,6 +57,7 @@ Gem::Specification.new do |s|
     Gemfile.lock
     README.md
     Rakefile
+    ext/java/jar/markdownpapers-core-1.2.3.jar
     lib/paperwrap.rb
     lib/paperwrap/version.rb
     paperwrap.gemspec
