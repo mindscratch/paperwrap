@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   ## the sub! line in the Rakefile
   s.name              = 'paperwrap'
   s.version           = '0.0.1'
-  s.date              = '2012-02-23'
+  s.date              = '2012-02-25'
   s.rubyforge_project = 'paperwrap'
 
   ## Make sure your summary is short. The description may be as long
@@ -61,6 +61,7 @@ Gem::Specification.new do |s|
     lib/paperwrap.rb
     lib/paperwrap/markdown.rb
     paperwrap.gemspec
+    spec/paperwrap/markdown_spec.rb
     spec/spec_helper.rb
   ]
   # = MANIFEST =
