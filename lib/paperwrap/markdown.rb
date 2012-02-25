@@ -1,3 +1,5 @@
+require 'java'
+
 jars_path = File.join(File.dirname(__FILE__), '..', '..', 'ext', 'java', 'jar')
 Dir.glob("#{jars_path}/**/*.jar").each {|jar| require jar}
 
