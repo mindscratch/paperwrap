@@ -10,7 +10,8 @@ Usage
 
 ````ruby
 # get some Markdown text
-markdown_text = File.open('README.md').read
+markdown_file = "" # file with markdown
+markdown_text = File.open(markdown_file).read
 
 # create the processor
 m = Paperwrap::Markdown.new markdown_text
