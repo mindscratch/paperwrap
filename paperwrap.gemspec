@@ -59,6 +59,8 @@ Gem::Specification.new do |s|
     Rakefile
     ext/java/jar/markdownpapers-core-1.2.3.jar
     lib/paperwrap.rb
+    lib/paperwrap/extensions.rb
+    lib/paperwrap/extensions/smarty_html.rb
     lib/paperwrap/markdown.rb
     paperwrap.gemspec
     spec/paperwrap/markdown_spec.rb

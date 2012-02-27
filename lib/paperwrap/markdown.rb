@@ -6,10 +6,6 @@ Dir.glob("#{jars_path}/**/*.jar").each {|jar| require jar}
 module Paperwrap
   class Markdown
 
-    HTML_EXT_MAP = {
-      :smart => Paperwrap::Extensions::SmartyHTML
-    }
-
     def initialize(text, *extensions)
       @text = text
       @html_extensions = prepare_html_extensions(extensions) || []
@@ -42,7 +38,7 @@ module Paperwrap
       result = nil
       unless extensions.nil? || extensions.empty?
         result = extensions.map do |ext|
-          HTML_EXT_MAP.fetch(ext, nil)
+          Paperwrap::Extensions::HTML_EXT_MAP.fetch(ext, nil)
         end.compact.uniq
       end
       result

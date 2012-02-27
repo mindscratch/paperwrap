@@ -8,7 +8,7 @@ module Paperwrap
       end
 
       def to_html
-        @patns.to_html
+        @pants.to_html
       end
     end
   end
