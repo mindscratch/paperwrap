@@ -1,7 +1,8 @@
 PATH
   remote: .
   specs:
-    paperwrap (0.0.1)
+    paperwrap (0.0.2)
+      rubypants (>= 0.2.0)
 
 GEM
   remote: http://rubygems.org/
@@ -16,6 +17,7 @@ GEM
     rspec-expectations (2.8.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.8.0)
+    rubypants (0.2.0)
 
 PLATFORMS
   java

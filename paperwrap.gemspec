@@ -13,8 +13,8 @@ Gem::Specification.new do |s|
   ## If your rubyforge_project name is different, then edit it and comment out
   ## the sub! line in the Rakefile
   s.name              = 'paperwrap'
-  s.version           = '0.0.1'
-  s.date              = '2012-02-25'
+  s.version           = '0.0.2'
+  s.date              = '2012-02-26'
   s.rubyforge_project = 'paperwrap'
 
   ## Make sure your summary is short. The description may be as long
@@ -40,7 +40,7 @@ Gem::Specification.new do |s|
 
   ## List your runtime dependencies here. Runtime dependencies are those
   ## that are needed for an end user to actually USE your code.
-  ## s.add_dependency('DEPNAME', [">= 1.1.0", "< 2.0.0"])
+  s.add_dependency 'rubypants', '>= 0.2.0'
 
   ## List your development dependencies here. Development dependencies are
   ## those that are only needed during development
