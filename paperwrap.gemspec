@@ -63,6 +63,7 @@ Gem::Specification.new do |s|
     lib/paperwrap/extensions/smarty_html.rb
     lib/paperwrap/markdown.rb
     paperwrap.gemspec
+    spec/paperwrap/extensions/smarty_html_spec.rb
     spec/paperwrap/markdown_spec.rb
     spec/spec_helper.rb
   ]
